@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.info_logo {
+    width: 300px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.forms {
+    display: flex;
+    justify-content: space-around;
+    /* не знаю что правильнее в задании - around или between, так что выбрал тот, что красивее */
+}
+
+.for_contact_us {
+    text-align: center;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.bord {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+.choises_what_we_do {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_elem {
+    /* border: 2px solid #3be719; */
+    width: 359px;
+}
+
+.h1 {
+    font-size: 64px;
+    color: #1F3F68;
+    width: 510px;
+}
+
+.h1_between {
+    width: 425px;
+}
+
+.h2 {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.h3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.pre_footer_info {
+    /* border: 2px solid #e90b3b; */
+    width: 495px;
+}
+
+.pre_footer h3 {
+    width: 340px;
+    text-align: left;
+}
+
+.inputs {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.button {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
