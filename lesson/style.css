@@ -4,16 +4,14 @@
 }
 
 .container {
-    width: 1366px;
+    max-width: 1140px;
     margin: 0 auto;
+    padding-left: 113px;
+    padding-right: 113px;
 }
 
 .info_logo {
     width: 300px;
-}
-
-li {
-    list-style-type: none;
 }
 
 .forms {
@@ -37,6 +35,7 @@ li {
     display: flex;
     justify-content: space-between;
     margin-top: 48px;
+    list-style-type: none;
 }
 
 .first_info {
@@ -46,6 +45,7 @@ li {
     background-image: url(image/illustration.png);
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: 44%;
 }
 
 .h1 {
@@ -82,6 +82,10 @@ li {
 .contact_list {
     display: flex;
     justify-content: space-between;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
 }
 
 body {
@@ -103,7 +107,7 @@ body {
 
 .choises_what_we_do {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 64px;
 }
 
@@ -163,21 +167,49 @@ body {
     margin-bottom: 14px;
 }
 
+.prj_item_img {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.imgs {
+    width: 100%;
+    flex-grow: 1;
+    position: relative;
+}
+
+.prj_imgs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    position: relative;
+}
+
 .prj_item {
-    width: 100%;
+    position: relative;
 }
 
-.pr_img {
-    width: 100%;
+.img_text {
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    top: 64px;
+    right: 64px;
+    position: absolute;
 }
 
-.pre_footer_info {
-    width: 495px;
-}
-
-.pre_footer h3 {
-    width: 340px;
-    text-align: left;
+.img_text1 {
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    top: 32px;
+    left: 32px;
+    position: absolute;
 }
 
 .inputs {
@@ -197,4 +229,91 @@ body {
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+
+.footer {
+    margin-top: 112px;
+    height: 657px;
+    background: #316099;
+    padding-top: 91px;
+}
+
+.pre_footer {
+    margin-left: 113px;
+    margin-right: 113px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 96px;
+}
+
+.pre_footer_info {
+    max-width: 495px;
+}
+
+.pre_footer h3 {
+    width: 341px;
+    text-align: left;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.footer_bord {
+    margin-top: 32px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.footer_button {
+    background: #5A98D0;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    width: 236.63px;
+    height: 56px;
+    margin-top: 74px;
+}
+
+.post_footer {
+    margin-top: 64px;
+    margin-left: 113px;
+    margin-right: 113px;
+}
+
+.reserved_rights {
+    margin-top: 64px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+@media (max-width:1024px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .first_info {
+        margin-left: 0px;
+        background-position: right 280px;
+    }
+    .choises_what_we_do {
+        flex-direction: column;
+    }
+    .content_elem {
+        align-self: center;
+        margin: 16px;
+    }
+    .contact_list {
+        flex-direction: column;
+    }
 }
