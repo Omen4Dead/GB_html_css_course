@@ -27,7 +27,7 @@
 .first_list {
     display: flex;
     flex-direction: column;
-    height: 768px;
+    min-height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
@@ -86,6 +86,11 @@
     line-height: 26px;
     letter-spacing: 0.05em;
     color: #FFFFFF;
+}
+
+.contact_list li {
+    width: 358px;
+    justify-content: space-between;
 }
 
 body {
@@ -254,18 +259,13 @@ body {
     width: 341px;
     text-align: left;
     font-size: 36px;
-    line-height: 46px;
     letter-spacing: 0.05em;
     color: #FFFFFF;
 }
 
 .footer_bord {
     margin-top: 32px;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.05em;
     color: #FFFFFF;
-    opacity: 0.6;
 }
 
 .footer_button {
@@ -290,11 +290,7 @@ body {
 
 .reserved_rights {
     margin-top: 64px;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.05em;
     color: #FFFFFF;
-    opacity: 0.4;
 }
 
 @media (max-width:1024px) {
@@ -315,5 +311,70 @@ body {
     }
     .contact_list {
         flex-direction: column;
+    }
+    .contact_list li {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 667px) {
+    .menu {
+        margin-top: 24px;
+    }
+    .first_list {
+        min-height: 376px;
+        padding-bottom: 41px;
+        box-sizing: border-box;
+    }
+    .h1 {
+        text-align: center;
+        width: auto;
+    }
+    .h1_between {
+        text-align: center;
+        width: auto;
+    }
+    .first_info {
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top_button {
+        font-size: 12px;
+        line-height: 26px;
+        padding: 0 8px;
+    }
+    .prj_imgs {
+        flex-direction: column;
+    }
+    .content_elem {
+        width: auto;
+    }
+    .finished_project_text {
+        width: auto;
+    }
+    .pre_footer {
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+        align-items: center;
+        margin-bottom: 41px;
+    }
+    .pre_footer h3 {
+        text-align: center;
+        width: auto;
+    }
+    .footer_bord {
+        text-align: center;
+    }
+    .post_footer {
+        margin-top: 32px;
+        margin-left: 35px;
+        margin-right: 53px;
+    }
+    .reserved_rights {
+        margin-top: 0px;
+        text-align: center;
     }
 }
